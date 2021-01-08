@@ -33,23 +33,38 @@ body {
   /* App Container */
   
   .container {
-    border: 2px solid Snow;
+    border: 2px solid rgb(230, 49, 49);
+    display: flex; 
+    /*  changes an element to a block-level container with flex items inside of it. */
   }
   
   /* To Do Section */
   
   .week {
+
+
+    display: inline-flex; 
+    /* makes the flex container display inline.*/
+    flex-grow: 3; 
+    flex-direction: column; 
   }
   
   .row {
     min-height: 200px;
     display: flex;
+    flex-wrap: wrap; 
+    justify-content: space-around; 
+    align-items: center; 
   }
   
   .square {
     width: 125px;
     height: 125px;
     padding: 10px;
+    display: flex; 
+    /*  changes an element to a block-level container with flex items inside of it. */
+    justify-content: center; 
+    align-items: center; 
   }
   
   .day.square {
@@ -72,6 +87,8 @@ body {
   
   .reminders {
     background-color: Khaki;
+    display: inline-flex; 
+    flex-grow: 2; 
   }
   
   .reminders h3 {
